@@ -5,27 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saylani form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <img src="saylini.jpeg" alt="" style="margin: auto;display: block;width:15vw; height: 15vh;">
     <h1>Saylani</h1>
-    <h2>Registration form</h2>
+    <h2>Registration form - SMIT</h2>
+    <div class="container">
+        <div class="items">
+            <ul>
+                <li>Registration</li>
+                <li>Download ID Card</li>
+                <li>Results</li>
+            </ul>
+        </div>
+    </div>
     <table>
         <tr>
             <td>
-                <form>
+                <form class="form">
                     <p>Select Country</p>
                     <select name="country" aria-placeholder="select country">
-                        <option value="Pakistan" aria-placeholder="select country">Pakistan</option>
+                        <option value="Pakistan">Pakistan</option>
                         <option value="Turkey">Turkey</option>
             </td>
             </select>
             </form>
-            <form>
+            <form class="form">
                 <td colspan="50"></td>
                 <td>
                     <p>Select your City</p>
-                    <select name="City">
+                    <select name="City" aria-placeholder="select City">
                         <option value="karachi"> Karachi</option>
                         <option value="Hyderabad">Hyderabad</option>
                         <option value="Faisalabad">Faisalabad</option>
@@ -39,7 +50,7 @@
 
         <tr>
             <td>
-                <form>
+                <form class="form">
                     <p>Select course or event</p>
                     <select name="course">
                         <option value="Web And Mobile Application Development"> Web And Mobile Application Development
@@ -52,7 +63,7 @@
                 </form>
             </td>
             <td colspan="50"></td>
-            <form>
+            <form class="form">
                 <td>
                     <p>Select your Computer Skills</p>
                     <select name=" Computer Skills">
@@ -69,12 +80,13 @@
         <tr>
             <td>
                 <p>Full Name </p>
-                <input type="text" name="Full Name" placeholder="Enter Your Name" size="15" />
+                <input type="text" name="Full Name" placeholder="Enter Your Name" size="15" class="form" />
             </td>
             <td colspan="50"></td>
             <td>
                 <P> Father Name</P>
-                <input type=" text" name=" Fther Name" placeholder="Enter Your Father's Full Name" size="20" />
+                <input type=" text" name=" Fther Name" placeholder="Enter Your Father's Full Name" size="20"
+                    class="form " />
             </td>
         </tr>
 
@@ -97,12 +109,13 @@
         <tr>
             <td>
                 <p>CNIC</p>
-                <input type="number" name=" CNIC number" size="15" maxlength="13" />
+                <input type="number" name=" CNIC number" placeholder="CNIC number" size="15" maxlength="13" />
             </td>
             <td colspan="50"></td>
             <td>
                 <p> Father's CNIC (optional)</p>
-                <input type="number" name=" CNIC number" size="15" maxlength="13" />
+                <input type="number" name=" CNIC number" placeholder="Father's CNIC (optional)" size="15"
+                    maxlength="13" />
             </td>
         </tr>
         <td>
@@ -140,30 +153,34 @@
         <tr>
             <td>
                 <p>Do you Have A laptop</p>
-                <input type="checkbox" name="yes " />Yes
-                <input type="checkbox" name="No" />NO
+                <input type="radio" name="laptop" value="yes" />Yes
+                <input type="radio" name="laptop" value="No" />NO
             </td>
         </tr>
     </table>
     <form>
+        <div class="pic" style="margin-left: 50px;">
         <p>Select Your Image</p>
-        <img type="image" width=" 100" height="20" />
+        <img type="image" width=" 100" height="20" >
+        </div>
         <p>
         <ol>
-            <li> I hereby, solemnly declare that the data and facts mentioned herein are true and correct to the best of my
-            knowledge. Further, I will abide by all the established and future regulations and policies of SWIT</li>
-        
-           <li>  I hereby accept the responsibilities of good conduct and guarantee that I will not be involved in any other
-            activity, political or ethical, but learning during my stay in the program.</li>
-       
-           <li> Defiance will render my admission canceled at any point in time.</li>
-       
+            <li> I hereby, solemnly declare that the data and facts mentioned herein are true and correct to the best of
+                my
+                knowledge. Further, I will abide by all the established and future regulations and policies of SWIT</li>
+
+            <li> I hereby accept the responsibilities of good conduct and guarantee that I will not be involved in any
+                other
+                activity, political or ethical, but learning during my stay in the program.</li>
+
+            <li> Defiance will render my admission canceled at any point in time.</li>
+
             <li> Upon completion, of the course, I will complete the required project by SWIT.</li>
-        
-             <li>It's mandatory for female students to wear abaya/hijab in the class</li>
+
+            <li>It's mandatory for female students to wear abaya/hijab in the class</li>
         </ol>
         </p>
-        <input type="submit" name="submit"
-value="submit" />
+        <input type="submit" name="submit" value="submit"
+            style="margin: 500px;;background-color: #0d6efd;color: white;border: transparent;border-radius:5px; margin:auto; display:block; width:40vw; font-size:18px;">
 
     </form>

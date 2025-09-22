@@ -1,0 +1,48 @@
+* {
+    justify-content: center;
+
+}
+
+.container  ul{
+    margin: 40px;
+    display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     list-style: none;
+}
+.container ul :hover{
+    color: rgb(35, 193, 38);
+    text-decoration: underline ;
+    text-decoration-color: black;
+}
+
+body {
+    background-color: fffff;
+}
+
+img {
+    width: 100px;
+    height: 50px;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    color: rgb(40, 39, 39)
+}
+
+    {
+    color: green;
+}
+
+table {
+    margin: 60px;
+    display: flex;
+}
